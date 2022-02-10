@@ -1,0 +1,4 @@
+services:
+  tuneuptechnology-docs:
+    volumes:
+      - ./src:/var/www/html/public

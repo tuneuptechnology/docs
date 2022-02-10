@@ -1,0 +1,15 @@
+[submodule "src/docs/php"]
+	path = src/docs/php
+	url = https://github.com/tuneuptechnology/tuneuptechnology-php.git
+[submodule "src/docs/python"]
+	path = src/docs/python
+	url = https://github.com/tuneuptechnology/tuneuptechnology-python.git
+[submodule "src/docs/node"]
+	path = src/docs/node
+	url = https://github.com/tuneuptechnology/tuneuptechnology-node.git
+[submodule "src/docs/go"]
+	path = src/docs/go
+	url = https://github.com/tuneuptechnology/tuneuptechnology-go.git
+[submodule "src/docs/ruby"]
+	path = src/docs/ruby
+	url = https://github.com/tuneuptechnology/tuneuptechnology-ruby.git

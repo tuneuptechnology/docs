@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php require_once('example_router.php'); ?>
+
 <head>
     <title>Tuneup Technology Docs</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="assets/css/stylesheet.css" rel="stylesheet">
 </head>
 
@@ -151,34 +153,69 @@
         <h5 class="new-section-title">Customer API Calls</h5>
         <p>Select an endpoint to see more info.</p>
 
-        <?php
-        $dir = array_slice(scandir('./docs'), 2);
-        foreach ($dir as $language) {
-            if ($language == 'go') {
-                echo "<h2>${language} Examples</h2>";
+        <div class="row">
+            <div class="col">
+                <div class="endpoint"><span class="btn-post">POST</span>&nbsp;&nbsp;/customers</div>
+                <p>Creates a customer attaching it to a user and your company.</p>
+            </div>
+            <div class="col">
+                <?php require('language_selector.php'); ?>
+            </div>
 
-                $dir = array_slice(scandir("./docs/${language}/examples"), 2);
-                foreach ($dir as $godir) {
-                    $subdir = array_slice(scandir("./docs/${language}/examples/$godir"), 2);
-                    foreach ($subdir as $example) {
-                        echo "<h3>" . $example . "</h3>";
-                        echo "<code>" . nl2br(file_get_contents("./docs/${language}/examples" . '/' . $godir . '/' . $example)) . "</code>";
-                        echo "<hr />";
-                    }
-                }
-            } else {
-                echo "<h2>${language} Examples</h2>";
+            <?php get_example('create', 'customer'); ?>
+        </div>
 
-                $dir = array_slice(scandir("./docs/${language}/examples"), 2);
-                foreach ($dir as $example) {
-                    echo "<h3>" . $example . "</h3>";
-                    echo "<code>" . nl2br(file_get_contents("./docs/${language}/examples" . '/' . $example)) . "</code>";
-                    echo "<hr />";
-                }
-            }
-        }
-        ?>
+        <div class="row">
+            <div class="col">
+                <div class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/customers</div>
+                <p>Retrieves all customers from your company.</p>
+            </div>
+            <div class="col">
+                <?php require('language_selector.php'); ?>
+            </div>
+
+            <?php get_example('retrieve', 'customers'); ?>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/customers/{id}</div>
+                <p>Retrieves a specific customer from your company.</p>
+            </div>
+            <div class="col">
+                <?php require('language_selector.php'); ?>
+            </div>
+
+            <?php get_example('retrieve', 'customer'); ?>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="endpoint"><span class="btn-post">PATCH</span>&nbsp;&nbsp;/customers/{id}</div>
+                <p>Updates a customer in your company.</p>
+            </div>
+            <div class="col">
+                <?php require('language_selector.php'); ?>
+            </div>
+
+            <?php get_example('update', 'customer'); ?>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="endpoint"><span class="btn-post">DELETE</span>&nbsp;&nbsp;/customers/{id}</div>
+                <p>Deletes a customer from your company.</p>
+            </div>
+            <div class="col">
+                <?php require('language_selector.php'); ?>
+            </div>
+
+            <?php get_example('delete', 'customer'); ?>
+        </div>
+
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </html>

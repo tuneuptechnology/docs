@@ -12,7 +12,7 @@ jobs:
         run: docker network create traefik
       - name: Setup Docker container
         run: |
-          docker compose up -d
+          docker compose up -d --quiet-pull
           docker ps | grep -q docs-tuneuptechnology-docs-1
   deploy:
     needs: ["docker"]

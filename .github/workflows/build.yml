@@ -13,7 +13,7 @@ jobs:
       - name: Setup Docker container
         run: |
           docker compose up -d
-          docker ps | grep -q tuneuptechnology-docs-tuneuptechnology-docs-1
+          docker ps | grep -q docs-tuneuptechnology-docs-1
   deploy:
     needs: ["docker"]
     runs-on: ubuntu-latest
@@ -25,4 +25,4 @@ jobs:
           webhook_type: "json-extended"
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
-          data: '{ "pipeline": "deploy", "prod_compose": true, "healthcheck": ["tuneuptechnology-docs-tuneuptechnology-docs-1", "tuneuptechnology-docs-tuneuptechnology-docs-2"] }'
+          data: '{ "pipeline": "deploy", "prod_compose": true, "healthcheck": ["docs-tuneuptechnology-docs-1", "docs-tuneuptechnology-docs-2"] }'

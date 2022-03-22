@@ -1,72 +1,78 @@
-body,html{
-  font-family:Poppins,sans-serif;
-  margin-bottom:100px
+body,
+html {
+  font-family: Poppins, sans-serif;
+  margin-bottom: 100px;
 }
-@media only screen and (max-width:768px){
-  .mobile-element-center{
-      text-align:center!important
+@media only screen and (max-width: 768px) {
+  .mobile-element-center {
+    text-align: center !important;
   }
 }
 .container {
   padding: 40px 20px;
 }
-.call{
-  padding:15px 0 5px
+.call {
+  padding: 15px 0 5px;
 }
-.call p{
-  margin-top:15px
+.call p {
+  margin-top: 15px;
 }
-.type-column{
-  padding-left:25px
+.type-column {
+  padding-left: 25px;
 }
-h5{
-  padding-top:10px
+h5 {
+  padding-top: 10px;
 }
-.endpoint{
-  font-size:1.2rem
+.endpoint {
+  font-size: 1.6rem;
 }
-.btn-post{
-  background-color:#007dda;
-  padding:1px 6px;
-  color:#fff;
-  border-radius:5px;
-  font-size:1rem
+.btn-post {
+  background-color: #007dda;
+  padding: 2px 6px 1px 6px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.6rem;
 }
-.new-section-title{
-  padding-top:30px
+.new-section-title {
+  padding-top: 30px;
 }
-.code-block{
-  background-color:#3c505a;
-  color:#fff;
-  overflow-x:auto
+.code-block-red {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: pink;
+  color: maroon;
 }
-.code-block,.code-block-red{
-  padding:15px;
-  border-radius:8px;
-  margin-bottom:20px
+pre {
+  margin-bottom: 50px;
 }
-.code-block-red{
-  background-color:pink;
-  color:maroon
+.bg-theme-color {
+  background-color: #007dda;
+  color: #fff;
+  margin-top: -160px;
+  padding: 160px 0 20px;
 }
-.bg-theme-color{
-  background-color:#007dda;
-  color:#fff;
-  margin-top:-160px;
-  padding:160px 0 20px
+.bg-theme-color a,
+.bg-theme-color a:link,
+.bg-theme-color a:visited,
+.bg-theme-color h1,
+.bg-theme-color h2,
+.bg-theme-color h3,
+.bg-theme-color h4,
+.bg-theme-color h5,
+.bg-theme-color h6,
+.bg-theme-color p {
+  color: #fff;
 }
-.bg-theme-color a,.bg-theme-color a:link,.bg-theme-color a:visited,.bg-theme-color h1,.bg-theme-color h2,.bg-theme-color h3,.bg-theme-color h4,.bg-theme-color h5,.bg-theme-color h6,.bg-theme-color p{
-  color:#fff
+.bg-theme-color a:hover {
+  opacity: 0.7;
 }
-.bg-theme-color a:hover{
-  opacity:.7
+.bg-theme-color .avatar-thumbnail {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
-.bg-theme-color .avatar-thumbnail{
-  border-radius:50%;
-  width:40px;
-  height:40px
-}
-.bg-theme-color .owner-titles{
-  display:inline-block;
-  vertical-align:middle
+.bg-theme-color .owner-titles {
+  display: inline-block;
+  vertical-align: middle;
 }

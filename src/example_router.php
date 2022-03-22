@@ -11,9 +11,7 @@ function get_example(String $action, String $object)
                 foreach ($subdir as $example) {
                     if ($selected_language == $language) {
                         if (str_contains($example, $action) && str_contains($example, $object)) {
-                            echo "<h3>${language} example</h3>";
-                            echo "<code><pre>" . file_get_contents("./docs/${language}/examples" . '/' . $godir . '/' . $example) . "</pre></code>";
-                            echo "<hr />";
+                            echo "<pre><code>" . file_get_contents("./docs/${language}/examples" . '/' . $godir . '/' . $example) . "</code></pre>";
                         }
                     }
                 }
@@ -23,10 +21,7 @@ function get_example(String $action, String $object)
             foreach ($dir as $example) {
                 if ($selected_language == $language) {
                     if (str_contains($example, $action) && str_contains($example, $object)) {
-                        echo "<h3>${language} example</h3>";
-                        // TODO: We need to escape the file contents because PHP examples are getting run as code
-                        echo "<code><pre>" . file_get_contents("./docs/${language}/examples" . '/' . $example) . "</pre></code>";
-                        echo "<hr />";
+                        echo "<pre><code>" . htmlspecialchars(file_get_contents("./docs/${language}/examples" . '/' . $example)) . "</code></pre>";
                     }
                 }
             }

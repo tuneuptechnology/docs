@@ -164,7 +164,7 @@
                 <?php require('language_selector.php'); ?>
             </div>
 
-            <?php get_example('create', 'customer'); ?>
+            <pre><code><?php echo get_example('create', 'customer'); ?></pre></code>
         </div>
 
         <div class="row">
@@ -176,7 +176,7 @@
                 <?php require('language_selector.php'); ?>
             </div>
 
-            <?php get_example('all', 'customer'); ?>
+            <pre><code><?php echo get_example('all', 'customer'); ?></code></pre>
         </div>
 
         <div class="row">
@@ -188,7 +188,7 @@
                 <?php require('language_selector.php'); ?>
             </div>
 
-            <?php get_example('retrieve', 'customer'); ?>
+            <pre><code><?php echo get_example('retrieve', 'customer'); ?></code></pre>
         </div>
 
         <div class="row">
@@ -200,7 +200,7 @@
                 <?php require('language_selector.php'); ?>
             </div>
 
-            <?php get_example('update', 'customer'); ?>
+            <pre><code><?php echo get_example('update', 'customer'); ?></code></pre>
         </div>
 
         <div class="row">
@@ -212,7 +212,7 @@
                 <?php require('language_selector.php'); ?>
             </div>
 
-            <?php get_example('delete', 'customer'); ?>
+            <pre><code><?php echo get_example('delete', 'customer'); ?></code></pre>
         </div>
 
     </div>

@@ -7,7 +7,6 @@
     <title>Tuneup Technology Docs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
     <link href="assets/css/stylesheet.css" rel="stylesheet">
 </head>
 
@@ -18,7 +17,7 @@
             <h1>Tuneup Technology App<br />API Documentation</h1>
             <p>The Tuneup Technology App RESTful API allows you to interact with the customers, tickets, inventory, and locations objects of the application.</p>
             <br />
-            <p><a href="/"><i class="fas fa-chevron-left"></i> Return to the Dashboard</a></p>
+            <p><a href="app.tuneuptechnology.com"><i class="fas fa-chevron-left"></i> Return to the Dashboard</a></p>
 
         </div>
     </div>
@@ -581,6 +580,7 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
 <script>
     hljs.highlightAll();
 </script>

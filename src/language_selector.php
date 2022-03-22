@@ -1,6 +1,6 @@
 <div class="dropdown">
     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="languageSelector" data-bs-toggle="dropdown" aria-expanded="false">
-        <?php echo strtoupper($_GET['lang']) ?>
+        <?php echo strtoupper($_GET['lang'] ?? 'curl') ?>
     </button>
     <ul class="dropdown-menu" aria-labelledby="languageSelector">
         <li><a class="dropdown-item" href="?lang=curl">Curl</a></li>

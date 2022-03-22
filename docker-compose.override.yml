@@ -1,4 +1,7 @@
+version: "3.8"
 services:
   tuneuptechnology-docs:
+    labels:
+      - traefik.frontend.rule=Host:website-archive.localhost
     volumes:
       - ./src:/var/www/html/public

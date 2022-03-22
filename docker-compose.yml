@@ -1,5 +1,15 @@
+version: "3.8"
 services:
   tuneuptechnology-docs:
     build: .
-    ports:
-      - 8080:80
+    restart: always
+    networks:
+      - traefik
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik
+      - traefik.port=80
+
+networks:
+  traefik:
+    name: traefik

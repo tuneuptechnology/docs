@@ -7,19 +7,20 @@
  * @param String $object
  * @return String
  */
-function get_example(String $action, String $object)
+function get_example(String $action, String $object): String
 {
     $selected_language = $_GET['lang'] ?? 'curl';
     $docs_dir = array_slice(scandir('./docs'), 2);
     foreach ($docs_dir as $language) {
         // GOLANG
         if ($selected_language == 'go') {
-            $dir = array_slice(scandir("./docs/${selected_language}/examples"), 2);
-            foreach ($dir as $godir) {
-                $subdir = array_slice(scandir("./docs/${selected_language}/examples/$godir"), 2);
-                foreach ($subdir as $example) {
+            $examples_dir = array_slice(scandir("./docs/${selected_language}/examples"), 2);
+            foreach ($examples_dir as $object_dir) {
+                $objects_dir = array_slice(scandir("./docs/${selected_language}/examples/$object_dir"), 2);
+                foreach ($objects_dir as $example) {
                     if (str_contains($example, $action)) {
-                        return htmlspecialchars(file_get_contents("./docs/$selected_language/examples/$godir/$example"));
+                        $nested_file = array_slice(scandir("./docs/$selected_language/examples/$object_dir/$example"), 2)[0];
+                        return htmlspecialchars(file_get_contents("./docs/$selected_language/examples/$object_dir/$example/$nested_file"));
                     }
                 }
             }

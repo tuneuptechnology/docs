@@ -9,4 +9,6 @@ services:
       timeout: 10s
       retries: 3
     labels:
-      - traefik.frontend.rule=Host:docs.tuneuptechnology.com,www.docs.tuneuptechnology.com
+      - "traefik.http.routers.tuneuptechnology-docs.rule=Host(`docs.tuneuptechnology.com`) || Host(`www.docs.tuneuptechnology.com`)"
+      - "traefik.http.routers.tuneuptechnology-docs.tls=true"
+      - "traefik.http.routers.tuneuptechnology-docs.tls.certresolver=letsencrypt"

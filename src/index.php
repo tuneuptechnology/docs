@@ -102,7 +102,7 @@
         <h2>Customers</h2>
         <p>Customers are the main focus of the App. Every other record is tied to a customer whether that's a ticket, a piece of inventory used for that ticket, etc.</p>
 
-        <h3 class="new-section-title">Customers Object</h3>
+        <h3 class="pt-4">Customers Object</h3>
         <table class="table table-striped">
             <tr>
                 <th class="text-right">Parameter</th>
@@ -151,11 +151,11 @@
             </tr>
         </table>
 
-        <h3 class="new-section-title">Customer API Calls</h3>
+        <h3 class="pt-4">Customer API Calls</h3>
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">POST</span>&nbsp;&nbsp;/customers</h3>
+                <h3 class="endpoint"><span class="btn-http">POST</span>&nbsp;&nbsp;/customers</h3>
                 <p>Creates a customer attaching it to a user and your company.</p>
             </div>
             <div class="col">
@@ -167,7 +167,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/customers</h3>
+                <h3 class="endpoint"><span class="btn-http">GET</span>&nbsp;&nbsp;/customers</h3>
                 <p>Retrieves all customers from your company.</p>
             </div>
             <div class="col">
@@ -179,7 +179,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/customers/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">GET</span>&nbsp;&nbsp;/customers/{id}</h3>
                 <p>Retrieves a specific customer from your company.</p>
             </div>
             <div class="col">
@@ -191,7 +191,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">PATCH</span>&nbsp;&nbsp;/customers/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">PATCH</span>&nbsp;&nbsp;/customers/{id}</h3>
                 <p>Updates a customer in your company.</p>
             </div>
             <div class="col">
@@ -203,7 +203,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">DELETE</span>&nbsp;&nbsp;/customers/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">DELETE</span>&nbsp;&nbsp;/customers/{id}</h3>
                 <p>Deletes a customer from your company.</p>
             </div>
             <div class="col">
@@ -218,7 +218,7 @@
         <h1>Inventory</h1>
         <p>Inventory can track quantities, item details, and pricing.</p>
 
-        <h3 class="new-section-title">Inventory Object</h3>
+        <h3 class="pt-4">Inventory Object</h3>
         <table class="table table-striped">
             <tr>
                 <th class="text-right">Parameter</th>
@@ -275,11 +275,11 @@
         <p><i>* = 1: other, 2: screen, 3: battery, 4: button/input, 5: camera, 6: power</i></p>
         <p><i>** = Allows decimals, do not send dollar signs.</i></p>
 
-        <h3 class="new-section-title">Inventory API Calls</h3>
+        <h3 class="pt-4">Inventory API Calls</h3>
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">POST</span>&nbsp;&nbsp;/inventory</h3>
+                <h3 class="endpoint"><span class="btn-http">POST</span>&nbsp;&nbsp;/inventory</h3>
                 <p>Creates an inventory item attaching it to your company.</p>
             </div>
             <div class="col">
@@ -291,7 +291,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/inventory</h3>
+                <h3 class="endpoint"><span class="btn-http">GET</span>&nbsp;&nbsp;/inventory</h3>
                 <p>Retrieves all inventory from your company.</p>
             </div>
             <div class="col">
@@ -303,7 +303,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/inventory/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">GET</span>&nbsp;&nbsp;/inventory/{id}</h3>
                 <p>Retrieves a specific inventory item from your company.</p>
             </div>
             <div class="col">
@@ -315,7 +315,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">PATCH</span>&nbsp;&nbsp;/inventory/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">PATCH</span>&nbsp;&nbsp;/inventory/{id}</h3>
                 <p>Updates an inventory item in your company.</p>
             </div>
             <div class="col">
@@ -327,7 +327,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">DELETE</span>&nbsp;&nbsp;/inventory/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">DELETE</span>&nbsp;&nbsp;/inventory/{id}</h3>
                 <p>Deletes an inventory item from your company.</p>
             </div>
             <div class="col">
@@ -342,7 +342,7 @@
         <h2>Locations</h2>
         <p>Locations allow companies to track inventory, customers, and tickets from various places individually.</p>
 
-        <h3 class="new-section-title">Locations Object</h3>
+        <h3 class="pt-4">Locations Object</h3>
         <table class="table table-striped">
             <tr>
                 <th class="text-right">Parameter</th>
@@ -381,11 +381,11 @@
             </tr>
         </table>
 
-        <h3 class="new-section-title">Location API Calls</h3>
+        <h3 class="pt-4">Location API Calls</h3>
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">POST</span>&nbsp;&nbsp;/locations</h3>
+                <h3 class="endpoint"><span class="btn-http">POST</span>&nbsp;&nbsp;/locations</h3>
                 <p>Creates a location attaching it to your company.</p>
             </div>
             <div class="col">
@@ -397,7 +397,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/locations</h3>
+                <h3 class="endpoint"><span class="btn-http">GET</span>&nbsp;&nbsp;/locations</h3>
                 <p>Retrieves all locations from your company.</p>
             </div>
             <div class="col">
@@ -409,7 +409,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/locations/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">GET</span>&nbsp;&nbsp;/locations/{id}</h3>
                 <p>Retrieves a specific location from your company.</p>
             </div>
             <div class="col">
@@ -421,7 +421,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">PATCH</span>&nbsp;&nbsp;/locations/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">PATCH</span>&nbsp;&nbsp;/locations/{id}</h3>
                 <p>Updates a location in your company.</p>
             </div>
             <div class="col">
@@ -433,7 +433,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">DELETE</span>&nbsp;&nbsp;/locations/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">DELETE</span>&nbsp;&nbsp;/locations/{id}</h3>
                 <p>Deletes a location from your company.</p>
             </div>
             <div class="col">
@@ -448,7 +448,7 @@
         <h2>Tickets</h2>
         <p>Tickets house notes, the status, and parts used for the ticket. Each ticket is assigned to a customer.</p>
 
-        <h3 class="new-section-title">Tickets Object</h3>
+        <h3 class="pt-4">Tickets Object</h3>
         <table class="table table-striped">
             <tr>
                 <th class="text-right">Parameter</th>
@@ -514,11 +514,11 @@
 
         <p><i>* = 1: other, 2: screen, 3: battery, 4: button/input, 5: camera, 6: power</i></p>
 
-        <h3 class="new-section-title">Ticket API Calls</h3>
+        <h3 class="pt-4">Ticket API Calls</h3>
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">POST</span>&nbsp;&nbsp;/tickets</h3>
+                <h3 class="endpoint"><span class="btn-http">POST</span>&nbsp;&nbsp;/tickets</h3>
                 <p>Creates a ticket attaching it to a user, customer, and your company.</p>
             </div>
             <div class="col">
@@ -530,7 +530,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/tickets</h3>
+                <h3 class="endpoint"><span class="btn-http">GET</span>&nbsp;&nbsp;/tickets</h3>
                 <p>Retrieves all tickets from your company.</p>
             </div>
             <div class="col">
@@ -542,7 +542,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">GET</span>&nbsp;&nbsp;/tickets/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">GET</span>&nbsp;&nbsp;/tickets/{id}</h3>
                 <p>Retrieves a specific ticket from your company.</p>
             </div>
             <div class="col">
@@ -554,7 +554,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">PATCH</span>&nbsp;&nbsp;/tickets/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">PATCH</span>&nbsp;&nbsp;/tickets/{id}</h3>
                 <p>Updates a ticket in your company.</p>
             </div>
             <div class="col">
@@ -566,7 +566,7 @@
 
         <div class="row">
             <div class="col">
-                <h3 class="endpoint"><span class="btn-post">DELETE</span>&nbsp;&nbsp;/tickets/{id}</h3>
+                <h3 class="endpoint"><span class="btn-http">DELETE</span>&nbsp;&nbsp;/tickets/{id}</h3>
                 <p>Deletes a ticket from your company.</p>
             </div>
             <div class="col">
